@@ -14,12 +14,13 @@
 ```
 
 无权限的处理, 未指定时默认是隐藏元素remove,  
-可以改为disable   
+可以改为disable, text（将输入框变成文本显示）
 
 ```vue
 <div v-rank="['6f7']"> 某权限操作 </div>
 <div v-rank:remove="['6f7']"> 某权限操作 </div>
 <div v-rank:disable="['6f7']"> 某权限操作 </div>
+<div v-rank:text="['6f7']"> 某权限操作 </div>
 ```  
 
 ## jsx中使用自定义指令:  

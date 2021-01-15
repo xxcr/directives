@@ -9,9 +9,17 @@ function disableElement (el) { // 将该元素的样式设置为disable
   el.style.filter = 'grayscale(100%) opacity(65%)'
 }
 
+function textElement (el) {
+  let newNode = document.createElement('div')
+  newNode.innerText = el.innerText
+  el.parentNode.replaceChild(newNode, el)
+}
+
+// 可扩充
 const NoPermHanleMethods = { // 指令可能收到的参数对象，设置个默认值remove
   remove: removeElementFromParent,
   disable: disableElement,
+  newNode.innerText = el.innerText
   DEFAULT_NAME: 'remove'
 }
 
